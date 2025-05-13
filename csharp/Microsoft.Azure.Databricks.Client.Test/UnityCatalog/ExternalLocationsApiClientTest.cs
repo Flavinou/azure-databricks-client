@@ -1,7 +1,9 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models.UnityCatalog;
 using Microsoft.Azure.Databricks.Client.UnityCatalog;
+
 using Moq;
 using Moq.Contrib.HttpClient;
+
 using System.Net;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -132,7 +134,7 @@ public class ExternalLocationsApiClientTest : UnityCatalogApiClientTest
             ""created_by"": ""string"",
             ""updated_at"": 0,
             ""updated_by"": ""string""
-        }  
+        }
 ";
 
         var handler = CreateMockHandler();

@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 using Newtonsoft.Json.Linq;
+
 using System.Diagnostics;
 
 namespace Microsoft.Azure.Databricks.Client.Test;

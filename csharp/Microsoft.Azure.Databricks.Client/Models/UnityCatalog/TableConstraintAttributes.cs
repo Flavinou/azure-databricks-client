@@ -12,7 +12,7 @@ public record TableConstraintAttributes
     public string FullNameArg { get; set; }
 
     /// <summary>
-    /// A table constraint, as defined by one of the following fields being set: 
+    /// A table constraint, as defined by one of the following fields being set:
     /// primary_key_constraint, foreign_key_constraint, named_table_constraint.
     /// </summary>
     [JsonPropertyName("constraint")]

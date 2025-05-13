@@ -1,6 +1,8 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models;
+
 using Moq;
 using Moq.Contrib.HttpClient;
+
 using System.Net;
 using System.Text.Json;
 
@@ -241,7 +243,7 @@ public class PipelinesApiClientTest : ApiClientTest
                 ""autoscale"": {},
                 ""apply_policy_default_values"": true
             }
-          ],                    
+          ],
           ""libraries"": [
             {
               ""notebook"": {
@@ -369,7 +371,7 @@ public class PipelinesApiClientTest : ApiClientTest
             {
               ""notebook"": {
                 ""path"": ""string""
-              }   
+              }
             }
           ],
           ""target"": ""string"",

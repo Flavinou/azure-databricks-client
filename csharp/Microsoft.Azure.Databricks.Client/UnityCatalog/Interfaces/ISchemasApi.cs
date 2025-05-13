@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models.UnityCatalog;
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -25,14 +26,14 @@ public interface ISchemasApi : IDisposable
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Gets the specified schema within the metastore. The caller must be a metastore admin, 
+    /// Gets the specified schema within the metastore. The caller must be a metastore admin,
     /// the owner of the schema, or a user that has the USE_SCHEMA privilege on the schema.
     /// </summary>
     Task<Schema> Get(string schemaFullName, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Updates a schema for a catalog. The caller must be the owner of the schema or a metastore admin. 
-    /// If the caller is a metastore admin, only the owner field can be changed in the update. 
+    /// Updates a schema for a catalog. The caller must be the owner of the schema or a metastore admin.
+    /// If the caller is a metastore admin, only the owner field can be changed in the update.
     /// If the name field must be updated, the caller must be a metastore admin or have the CREATE_SCHEMA privilege on the parent catalog.
     /// </summary>
     Task<Schema> Update(

@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 using Microsoft.Azure.Databricks.Client.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,15 +17,15 @@ internal static partial class SampleProgram
     // for a delta live pipeline in your workspace
     private static readonly string DeltaLivePipelineId = null;
 
-    // Replace with an existing experiment ID to try out the permissions API 
+    // Replace with an existing experiment ID to try out the permissions API
     // for an experiment in your workspace
     private static readonly string ExperimentId = null;
 
-    // Replace with an existing registered model ID to try out the permissions API 
+    // Replace with an existing registered model ID to try out the permissions API
     // for a registered model in your workspace
     private static readonly string RegisteredModelId = null;
 
-    // Replace with an existing sql warehouse endpoint ID to try out the permissions API 
+    // Replace with an existing sql warehouse endpoint ID to try out the permissions API
     // for a sql warehouse in your workspace
     private static readonly string SqlWareHouseEndpointId = null;
 
@@ -119,7 +120,7 @@ internal static partial class SampleProgram
 
     private static async Task TokenPermissions(DatabricksClient client)
     {
-        //only the getters are shown here, since updating these permissions might invalidate 
+        //only the getters are shown here, since updating these permissions might invalidate
         //the token that we are currently using to connect in the first place.
         Console.WriteLine("Getting and displaying the allowable permission levels for databricks tokens...");
         var allowablePermissions = await client.Permissions.GetTokenPermissionLevels();

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models.UnityCatalog;
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -19,7 +20,7 @@ public interface IConnectionsApi : IDisposable
     Task<Connection> Get(string name, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Creates a new connection to an external data source. 
+    /// Creates a new connection to an external data source.
     /// It allows users to specify connection details and configurations for interaction with the external server.
     /// </summary>
     Task<Connection> Create(

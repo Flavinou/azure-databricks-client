@@ -2,12 +2,16 @@
 // Licensed under the MIT License.
 
 using Microsoft.Azure.Databricks.Client.Models;
+
 using Moq;
 using Moq.Contrib.HttpClient;
+
 using Polly;
+
 using System.Net;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+
 using Policy = Polly.Policy;
 
 namespace Microsoft.Azure.Databricks.Client.Test;

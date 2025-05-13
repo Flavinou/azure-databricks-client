@@ -2,11 +2,13 @@
 // Licensed under the MIT License.
 
 using Microsoft.Azure.Databricks.Client.Models;
+
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+
 using FileInfo = Microsoft.Azure.Databricks.Client.Models.FileInfo;
 
 namespace Microsoft.Azure.Databricks.Client;
@@ -78,7 +80,7 @@ public interface IDbfsApi : IDisposable
     Task Move(string sourcePath, string destinationPath, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Uploads a file through the use of multipart form post. It is mainly used for streaming uploads, but can also be used as a convenient single call for data upload. 
+    /// Uploads a file through the use of multipart form post. It is mainly used for streaming uploads, but can also be used as a convenient single call for data upload.
     /// </summary>
     /// <param name="path">The path of the new file. The path should be the absolute DBFS path (e.g. “/mnt/foo/”). This field is required.</param>
     /// <param name="contents">This parameter might be absent, and instead a posted file will be used.</param>

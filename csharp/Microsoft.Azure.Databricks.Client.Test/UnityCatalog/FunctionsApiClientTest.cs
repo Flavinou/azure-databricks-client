@@ -1,7 +1,9 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models.UnityCatalog;
 using Microsoft.Azure.Databricks.Client.UnityCatalog;
+
 using Moq;
 using Moq.Contrib.HttpClient;
+
 using System.Net;
 using System.Text.Json;
 
@@ -67,7 +69,7 @@ public class FunctionsApiClientTest : UnityCatalogApiClientTest
                 {
                   ""function"": {
                     ""function_full_name"": ""string""
-                    }   
+                    }
                 }],
                 ""parameter_style"": ""S"",
                 ""is_deterministic"": true,

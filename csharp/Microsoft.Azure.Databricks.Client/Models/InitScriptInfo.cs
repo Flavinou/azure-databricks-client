@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 using System.Text.Json.Serialization;
+
 using Microsoft.Azure.Databricks.Client.Converters;
 
 namespace Microsoft.Azure.Databricks.Client.Models;

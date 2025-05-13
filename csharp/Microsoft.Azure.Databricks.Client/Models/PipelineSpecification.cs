@@ -91,7 +91,7 @@ public record PipelineSpecification
     /// <summary>
     /// A catalog in Unity Catalog to publish data from this pipeline to.
     /// If target is specified, tables in this pipeline are published to
-    /// a target schema inside catalog (for example, catalog.target.table). 
+    /// a target schema inside catalog (for example, catalog.target.table).
     /// If target is not specified, no data is published to Unity Catalog.
     /// </summary>
     [JsonPropertyName("catalog")]

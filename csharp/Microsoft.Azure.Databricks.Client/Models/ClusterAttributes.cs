@@ -130,7 +130,7 @@ public record ClusterAttributes : ClusterSize
     public ClusterLogConf ClusterLogConfiguration { get; set; }
 
     /// <summary>
-    /// The configuration for storing init scripts. 
+    /// The configuration for storing init scripts.
     /// </summary>
     /// <remarks>
     /// Any number of destinations can be specified. The scripts are executed sequentially in the order provided.

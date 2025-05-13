@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -16,8 +17,8 @@ public interface IPipelinesApi : IDisposable
     global::Azure.AsyncPageable<Pipeline> ListPageable(int pageSize = 25, CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Creates a new data processing pipeline based on the requested configuration. 
-    /// If successful, this method returns the ID of the new pipeline. 
+    /// Creates a new data processing pipeline based on the requested configuration.
+    /// If successful, this method returns the ID of the new pipeline.
     /// Also returns PipelineSpecification if dry_run is true.
     /// </summary>
     Task<(string, PipelineSpecification)> Create(
@@ -28,7 +29,7 @@ public interface IPipelinesApi : IDisposable
 
     /// <summary>
     /// Updates a pipeline with the supplied configuration.
-    /// </summary>  
+    /// </summary>
     Task Edit(
         string pipelineId,
         PipelineSpecification pipelineSpecification,

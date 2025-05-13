@@ -3,6 +3,7 @@
 
 using System;
 using System.Threading.Tasks;
+
 using Microsoft.Azure.Databricks.Client.Models;
 namespace Microsoft.Azure.Databricks.Client.Sample;
 

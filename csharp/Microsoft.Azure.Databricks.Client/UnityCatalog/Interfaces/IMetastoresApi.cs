@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.Databricks.Client.Models.UnityCatalog;
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -15,8 +16,8 @@ public interface IMetastoresApi : IDisposable
     Task<Metastore> GetSummary(CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Gets an array of the available metastores (as MetastoreInfo objects). 
-    /// The caller must be an admin to retrieve this info. 
+    /// Gets an array of the available metastores (as MetastoreInfo objects).
+    /// The caller must be an admin to retrieve this info.
     /// There is no guarantee of a specific ordering of the elements in the array.
     /// </summary>
     Task<IEnumerable<Metastore>> List(CancellationToken cancellationToken = default);
@@ -60,7 +61,7 @@ public interface IMetastoresApi : IDisposable
     Task<MetastoreAssignment> GetAssignment(CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Creates a new metastore assignment. If an assignment for the same workspace_id exists, 
+    /// Creates a new metastore assignment. If an assignment for the same workspace_id exists,
     /// it will be overwritten by the new metastore_id and default_catalog_name. The caller must be an account admin.
     /// </summary>
     Task CreateAssignment(
@@ -71,7 +72,7 @@ public interface IMetastoresApi : IDisposable
 
     /// <summary>
     /// Updates a metastore assignment. This operation can be used to update metastore_id or default_catalog_name for a specified Workspace,
-    /// if the Workspace is already assigned a metastore. The caller must be an account admin to update metastore_id; 
+    /// if the Workspace is already assigned a metastore. The caller must be an account admin to update metastore_id;
     /// otherwise, the caller can be a Workspace admin.
     /// </summary>
     Task UpdateAssignment(
